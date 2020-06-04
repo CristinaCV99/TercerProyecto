@@ -125,3 +125,4 @@ STATIC_URL = '/static/'
 
 #Auth redirect
 LOGIN_REDIRECT_URL = 'pages:pages'
+LOGIN_REDIRECT_URL = 'home'
