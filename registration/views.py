@@ -1,11 +1,11 @@
-from django.contrib.auth.forms import UserCreationForm
+from .forms import UserCreationFormWithEmail
 from django.views.generic import CreateView
 from django.urls import reverse_lazy
 from django import forms
 
 # Create your views here.
 class SignUpView(CreateView):
-    form_class = UserCreationForm
+    form_class = UserCreationFormWithEmail
     template_name = "registration/signup.html"
 
     def get_success_url(self):
